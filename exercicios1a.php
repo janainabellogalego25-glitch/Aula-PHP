@@ -8,10 +8,28 @@
 </head>
 <body>
     <?php
-        $nome = $_REQUEST["nome"];
-        $sexo = $_REQUEST["sexo"];
-        $valorcompra = $_REQUEST["valorcompra"];
+    if(isset($_REQUEST['Enviar'])){
+        $nome = $_POST['cliente'];
+        $genero = $_POST['sexo'];
+        $valor = $_POST['valorcompra'];
 
-    if($sexo==feminino)
+        if ($genero == "feminino") {
+            $desconto = 0.20; 
+        } elseif ($genero == "masculino") {
+            $desconto = 0.05; 
+        } else {
+            $desconto = 0;
+        }
+
+        $valor_desconto = $valor * $desconto;
+        $valor_final = $valor - $valor_desconto;
+
+        echo "<h3>Resultado:</h3>";
+        echo "Olá, <b>$nome</b>!<br>";
+        echo "Desconto aplicado: <b>" . ($desconto * 100);
+        echo "Valor do desconto: <b>R$ " .$valor_desconto, "</b><br>";
+        echo "Valor final: <b>R$ " . $valor_final "</b>";
+    }
+    ?>
 </body>
 </html>
