@@ -7,15 +7,8 @@
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-    <div class="menu">
-        <div>
-            Aula BD
-        </div>
-        <div>
-            <a href="#">Cadastrar</a>
-            <a href="#">Consultar</a>
-        </div>
-    </div>
+    <?php include "menu.php" ?>
+    
     <div class="conteudo">
         <h3>Integração de PhP com MySQL</h3>
         <p>Na Aula de hoje, vamos estudar como integrar o PHP com MySQL</p>
