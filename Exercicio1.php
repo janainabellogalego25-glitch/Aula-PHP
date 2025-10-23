@@ -20,10 +20,7 @@
         <input type="radio" name="sexo" value="Feminino"> Feminino<br>
          <input type="radio" name="sexo" value="Masculino"> Masculino<br>
     </p>
-    <p>
-        Digite o nome do cliente<br>
-        <input type="radio" name="sexo" value="Feminino"> Feminino<br>
-    </p>
+    
     Digite o valor da compra<br>
     <input type="number" name="valorcompra">
     

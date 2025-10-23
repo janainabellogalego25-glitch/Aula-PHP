@@ -9,9 +9,9 @@
 <body>
     <?php
     if(isset($_REQUEST['Enviar'])){
-        $nome = $_POST['cliente'];
-        $genero = $_POST['sexo'];
-        $valor = $_POST['valorcompra'];
+        $nome = $_REQUEST['cliente'];
+        $genero = $_REQUEST['sexo'];
+        $valor = $_REQUEST['valorcompra'];
 
         if ($genero == "feminino") {
             $desconto = 0.20; 
@@ -25,10 +25,9 @@
         $valor_final = $valor - $valor_desconto;
 
         echo "<h3>Resultado:</h3>";
-        echo "Olá, <b>$nome</b>!<br>";
-        echo "Desconto aplicado: <b>" . ($desconto * 100);
-        echo "Valor do desconto: <b>R$ " .$valor_desconto, "</b><br>";
-        echo "Valor final: <b>R$ " . $valor_final "</b>";
+        echo "Olá, <b>$nome !<br>";
+        echo "Desconto aplicado: <b>" .$desconto;
+        echo "<br>Valor final: R$ " .$valor_final;
     }
     ?>
 </body>
