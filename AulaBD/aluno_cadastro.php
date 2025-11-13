@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     <div class="conteudo">
 <h1>Cadastro de Alunos</h1>
 
-<form  action="#" method="POST">
+<form  action="aluno_cadastro1.php" method="POST">
     
     <p>
         Informe o nome do aluno:<br>
