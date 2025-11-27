@@ -6,9 +6,13 @@
     <title>Document</title>
 </head>
 <body>
- <h1>Cadastro de Cursos</h1>
 
-    <form method="POST" action="">
+  <?php include "menu.php" ?>
+
+    <div class="conteudo">
+
+     <h1>Cadastro de Cursos</h1>
+        <form action="curso_cadastro.php" method="post">
         <label>Informe o nome do curso:</label>
         <input type="text" name="curso" required>
 
